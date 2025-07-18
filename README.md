@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Filament Starter
 
 Here lives a beautiful starting point to quickly bootstrap your next [TALL stack](https://tallstack.dev/) application utilizing [Filament](https://filamentphp.com/) for the admin panel.
@@ -79,3 +80,6 @@ Contributing whether it be through PRs, reporting an issue, or suggesting an ide
 ## License
 
 Filament Starter is provided under the [MIT License](LICENSE.md).
+=======
+# pemrograman-web-perpustakaan-profile
+>>>>>>> 58f624b4435833dfe1280da815d6d39358445983
