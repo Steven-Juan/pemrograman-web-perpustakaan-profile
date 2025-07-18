@@ -26,7 +26,7 @@ bash
 Copy
 Edit
 # Clone repository
-git clone https://github.com/[USERNAME]/pemrograman-web-perpustakaan-profile.git
+git clone https://github.com/Steven-Juan/pemrograman-web-perpustakaan-profile.git
 cd pemrograman-web-perpustakaan-profile
 
 # Install PHP dependencies
