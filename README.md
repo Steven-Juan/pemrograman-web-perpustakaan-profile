@@ -21,11 +21,11 @@ Template HTML5: Envotek dari ThemeForest/Envato Elements
 
 PHP 8.2+, Node.js 18+, Composer
 
-📦 Cara Instalasi (Local Setup)
-bash
-Copy
-Edit
-# Clone repository
+---
+
+## 🚀 Clone & Setup
+
+```bash
 git clone https://github.com/Steven-Juan/pemrograman-web-perpustakaan-profile.git
 cd pemrograman-web-perpustakaan-profile
 
@@ -45,16 +45,3 @@ php artisan migrate --seed
 http://localhost:8000/admin
 Username: admin  
 Password: admin
-🎨 Struktur Proyek
-Folder/Path	Deskripsi
-/resources/views	File Blade views utama
-/resources/views/client	Halaman frontend dari template Envotek
-/resources/views/admin	Komponen Filament Admin Panel
-/public	Asset statis Envotek (CSS, JS, images, dll)
-
-🔌 Plugin Filament Terpasang
-Plugin	Deskripsi
-Filament Breezy	Otentikasi admin dan manajemen profil pengguna
-Filament Curator	Media manager bawaan
-Filament Logger	Log aktivitas otomatis pada CRUD resource
-Filament Peek	Live preview halaman frontend
