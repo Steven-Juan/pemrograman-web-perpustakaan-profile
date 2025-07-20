@@ -1,5 +1,5 @@
 Pemrograman Web – Company Profile Perpustakaan
-Ini adalah proyek tugas UAS mata kuliah Pemrograman Web berupa website Company Profile Perpustakaan yang dikembangkan menggunakan Laravel Filament Starter sebagai admin panel, serta menggunakan template HTML Envotek untuk tampilan frontend.
+Ini adalah proyek tugas UAS mata kuliah Pemrograman Web berupa website Company Profile Perpustakaan yang dikembangkan menggunakan Laravel Filament Starter sebagai admin panel, serta menggunakan template HTML Onova untuk tampilan frontend.
 
 
 
@@ -17,7 +17,7 @@ Livewire & Alpine.js (SPA-ready)
 
 TailwindCSS & Vite
 
-Template HTML5: Envotek dari ThemeForest/Envato Elements
+Template HTML5: Onova dari ThemeForest/Envato Elements
 
 PHP 8.2+, Node.js 18+, Composer
 
