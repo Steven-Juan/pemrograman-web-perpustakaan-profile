@@ -24,44 +24,19 @@
                                     <a href="/" class="active">Home</a>
                                 </li>
                                 <li class="menu-item">
-                                    <a href="/about" class="active">About</a>
-                                </li>
-                                <li class="menu-item menu-item-has-children">
-                                    <a href="#">Portfolio</a>
-                                    <ul class="sub-menu">
-                                        <li><a href="portfolio_1.html">Portfolio 01</a></li>
-                                        <li><a href="portfolio_2.html">Portfolio 02</a></li>
-                                        <li><a href="portfolio_3.html">Portfolio 03</a></li>
-                                        <li><a href="portfolio_details.html">Portfolio details</a></li>
-                                    </ul>
-                                </li>
-                                <li class="menu-item menu-item-has-children">
-                                    <a href="#">Pages</a>
-                                    <ul class="sub-menu">
-                                        <li><a href="faq.html">FAQ</a></li>
-                                        <li><a href="team.html">Our Team</a></li>
-                                        <li><a href="shop.html">Shop</a>
-                                            <ul class="sub-menu">
-                                                <li><a href="shop.html">Shop</a></li>
-                                                <li><a href="shop_details.html">Shop Details</a></li>
-                                                <li><a href="cart.html">Shop Cart</a></li>
-                                                <li><a href="checkout.html">Checkout</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="404.html">404</a></li>
-                                    </ul>
-                                </li>
-                                <li class="menu-item menu-item-has-children">
-                                    <a href="#">News</a>
-                                    <ul class="sub-menu">
-                                        <li><a href="blog_standard.html">Blog Standard</a></li>
-                                        <li><a href="blog_grid_2_column.html">Blog grid 2 columns</a></li>
-                                        <li><a href="blog_grid_3_column.html">Blog grid 3 columns</a></li>
-                                        <li><a href="blog_details.html">Blog details</a></li>
-                                    </ul>
+                                    <a href="/about">About</a>
                                 </li>
                                 <li class="menu-item">
-                                    <a href="contact.html">Contact</a>
+                                    <a href="/portfolio">Portfolio</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="/faq">FAQ</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="/blog">Blog</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="/contact">Contact</a>
                                 </li>
                             </ul>
                         </nav>
