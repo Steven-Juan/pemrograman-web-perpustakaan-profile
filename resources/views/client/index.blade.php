@@ -7,11 +7,11 @@
                     <div class="row">
                         <div class="col-lg-6">
                             <div class="hero-content">
-                                <span class="span">Your IT Business Partner</span>
-                                <h1>Onova Mean Solutions.</h1>
+                                <span class="span">Pusat Literasi dan Inovasi</span>
+                                <h1>Perpustakaan Kita.</h1>
                                 <ul class="button">
-                                    <li><a href="#" class="main-btn">Read More</a></li>
-                                    <li><a href="#" class="main-btn">Get A Quote</a></li>
+                                    <li><a href="#" class="main-btn">Selengkapnya</a></li>
+                                    <li><a href="#" class="main-btn">Hubungi Kami</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -23,11 +23,11 @@
                     <div class="row">
                         <div class="col-lg-6">
                             <div class="hero-content">
-                                <span class="span">Your IT Business Partner</span>
-                                <h1>Onova Mean Solutions.</h1>
+                                <span class="span">Pusat Literasi dan Inovasi</span>
+                                <h1>Perpustakaan Kita.</h1>
                                 <ul class="button">
-                                    <li><a href="#" class="main-btn">Read More</a></li>
-                                    <li><a href="#" class="main-btn">Get A Quote</a></li>
+                                    <li><a href="#" class="main-btn">Selengkapnya</a></li>
+                                    <li><a href="#" class="main-btn">Hubungi Kami</a></li>
                                 </ul>
                             </div>
                         </div>
