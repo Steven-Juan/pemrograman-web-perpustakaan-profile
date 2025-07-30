@@ -4,18 +4,13 @@ namespace App\Filament\Resources;
 
 use App\Filament\Resources\BukuResource\Pages;
 use App\Models\Buku;
-use App\Models\KategoriBuku;
 use Awcodes\Curator\Components\Forms\CuratorPicker;
 use Awcodes\Curator\Components\Tables\CuratorColumn;
 use Filament\Forms;
-use Filament\Forms\Components\Builder;
 use Filament\Forms\Form;
-use Filament\Forms\Get;
-use Filament\Forms\Set;
 use Filament\Resources\Resource;
 use Filament\Tables;
 use Filament\Tables\Table;
-use Illuminate\Support\Str;
 
 class BukuResource extends Resource
 {

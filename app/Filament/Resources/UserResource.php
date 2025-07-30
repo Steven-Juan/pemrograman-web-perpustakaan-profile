@@ -60,9 +60,9 @@ class UserResource extends Resource
                     ->maxLength(255),
 
                 Forms\Components\TextInput::make('password')
-                    ->dehydrateStateUsing(fn(string $state): string => Hash::make($state))
-                    ->dehydrated(fn(?string $state): bool => filled($state))
-                    ->required(fn(string $operation): bool => $operation === 'create')
+                    ->dehydrateStateUsing(fn (string $state): string => Hash::make($state))
+                    ->dehydrated(fn (?string $state): bool => filled($state))
+                    ->required(fn (string $operation): bool => $operation === 'create')
                     ->password()
                     ->confirmed()
                     ->maxLength(255),
@@ -70,7 +70,7 @@ class UserResource extends Resource
                 Forms\Components\TextInput::make('password_confirmation')
                     ->label('Confirm password')
                     ->password()
-                    ->required(fn(string $operation): bool => $operation === 'create')
+                    ->required(fn (string $operation): bool => $operation === 'create')
                     ->maxLength(255),
             ]);
     }
