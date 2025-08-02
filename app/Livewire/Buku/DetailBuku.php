@@ -4,7 +4,6 @@ namespace App\Livewire\Buku;
 
 use App\Models\Buku;
 use Livewire\Component;
-use Awcodes\Curator\Models\Media;
 
 class DetailBuku extends Component
 {

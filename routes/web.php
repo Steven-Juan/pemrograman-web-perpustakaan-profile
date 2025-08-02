@@ -26,7 +26,6 @@ Route::get('/faq', function () {
 })->name('faq');
 
 Route::get('/buku', ListBuku::class)->name('buku');
-
 Route::get('/buku/{id}', DetailBuku::class)->name('buku.show');
 
 Route::get('/blog-detail', function () {
