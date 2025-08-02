@@ -1,7 +1,6 @@
 <?php
 
 use App\Livewire\Buku\DetailBuku;
-
 use App\Livewire\Buku\ListBuku;
 use Illuminate\Support\Facades\Route;
 
@@ -26,6 +25,7 @@ Route::get('/faq', function () {
 })->name('faq');
 
 Route::get('/buku', ListBuku::class)->name('buku');
+
 Route::get('/buku/{id}', DetailBuku::class)->name('buku.show');
 
 Route::get('/blog-detail', function () {
