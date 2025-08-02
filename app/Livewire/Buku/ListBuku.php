@@ -1,13 +1,13 @@
 <?php
 
-namespace App\Livewire;
+namespace App\Livewire\Buku;
 
-use App\Models\Post;
+use App\Models\Buku;
 use Livewire\Component;
 use Livewire\WithPagination;
 use Spatie\SchemaOrg\Schema;
 
-class Home extends Component
+class ListBuku extends Component
 {
     use WithPagination;
 
@@ -19,21 +19,21 @@ class Home extends Component
     public function render()
     {
         seo()
-            ->title($title = config('app.name'))
-            ->description($description = 'Lorem ipsum...')
-            ->canonical($url = route('home'))
+            ->title($title = 'Daftar Buku')
+            ->description($description = 'Koleksi buku yang tersedia.')
+            ->canonical($url = route('buku'))
             ->addSchema(
                 Schema::webPage()
                     ->name($title)
                     ->description($description)
                     ->url($url)
-                    ->author(Schema::organization()->name($title))
+                    ->author(Schema::organization()->name(config('app.name')))
             );
 
-        $posts = Post::published()
-            ->latest('published_at')
+        $bukus = Buku::with(['kategori', 'image'])
+            ->latest()
             ->paginate(6);
 
-        return view('livewire.home', compact('posts'));
+        return view('livewire.buku.list-buku', compact('bukus'));
     }
 }

@@ -24,7 +24,7 @@
                                     <a href="/" class="active">Home</a>
                                 </li>
                                 <li class="menu-item">
-                                    <a href="/about">About</a>
+                                    <a href="/about">Tentang</a>
                                 </li>
                                 <li class="menu-item">
                                     <a href="/portfolio">Portfolio</a>
@@ -33,7 +33,7 @@
                                     <a href="/faq">FAQ</a>
                                 </li>
                                 <li class="menu-item">
-                                    <a href="/blog">Blog</a>
+                                    <a href="/buku">Koleksi Buku</a>
                                 </li>
                                 <li class="menu-item">
                                     <a href="/contact">Contact</a>
