@@ -2,9 +2,9 @@ name: Semgrep
 
 on:
   push:
-    branches: [ "main" ]
+    branches: ["main"]
   pull_request:
-    branches: [ "main" ]
+    branches: ["main"]
 
 jobs:
   semgrep:
@@ -15,5 +15,5 @@ jobs:
       - name: Run Semgrep scan
         uses: returntocorp/semgrep-action@v1
         with:
-          config: "p/owasp"
+          config: "p/owasp"          
           args: "--exclude vendor --exclude node_modules"
