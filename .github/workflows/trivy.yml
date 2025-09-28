@@ -8,6 +8,10 @@ on:
   schedule:
     - cron: '0 6 * * 1'  # setiap Senin pukul 06:00
 
+permissions:
+  contents: read
+  security-events: write  
+
 jobs:
   trivy-scan:
     runs-on: ubuntu-latest
@@ -15,14 +19,16 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Install Trivy
+      - name: Install dependencies
         run: |
           sudo apt-get update
-          sudo apt-get install -y wget
+          sudo apt-get install -y wget jq
+
+      - name: Install Trivy
+        run: |
           TRIVY_VERSION=$(curl -s https://api.github.com/repos/aquasecurity/trivy/releases/latest | jq -r .tag_name)
           wget https://github.com/aquasecurity/trivy/releases/download/${TRIVY_VERSION}/trivy_${TRIVY_VERSION#v}_Linux-64bit.deb
           sudo dpkg -i trivy_${TRIVY_VERSION#v}_Linux-64bit.deb
-
 
       - name: Run Trivy filesystem scan
         run: trivy fs --exit-code 1 --severity CRITICAL,HIGH ./ --format sarif --output trivy-results.sarif
@@ -31,6 +37,8 @@ jobs:
         uses: github/codeql-action/upload-sarif@v3
         with:
           sarif_file: 'trivy-results.sarif'
+          # Gunakan token jika GITHUB_TOKEN tidak punya izin upload SARIF
+          token: ${{ secrets.SARIF_UPLOAD_TOKEN || github.token }}
 
       - name: Upload Trivy artifact
         uses: actions/upload-artifact@v4
